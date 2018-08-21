@@ -6,5 +6,5 @@ import { Routes, RouterModule } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Change.org';
+  title = 'The world\'s platform for change';
 }
