@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PetitionService  } from '../petition.service'
 
 @Component({
@@ -7,11 +7,8 @@ import { PetitionService  } from '../petition.service'
   styleUrls: ['./edit-petition.component.css'],
   providers: [PetitionService]
 })
-export class EditPetitionComponent implements OnInit {
+export class EditPetitionComponent {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PetitionService  } from '../petition.service'
 
 @Component({
@@ -7,11 +7,7 @@ import { PetitionService  } from '../petition.service'
   styleUrls: ['./petition-detail.component.css'],
   providers: [PetitionService]
 })
-export class PetitionDetailComponent implements OnInit {
+export class PetitionDetailComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }
