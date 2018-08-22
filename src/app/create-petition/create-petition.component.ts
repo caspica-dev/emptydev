@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PetitionService  } from '../petition.service'
 import { Location } from '@angular/common';
 import { Petition } from '../petition.model'
@@ -14,5 +14,10 @@ import { Router } from '@angular/router';
 })
 export class CreatePetitionComponent {
 
+  constructor(private petitionService: PetitionService){}
 
+  submitForm(title: string, descriiption: string){
+  var newPetition: Petition = new Petition(title, descriiption);
+  this.petitionService.addPetition(newPetition);
+  }
 }
