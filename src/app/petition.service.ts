@@ -18,4 +18,7 @@ export class PetitionService {
   getPetitionById(petitionId: string){
     return this.database.object('/petitions/' + petitionId);
   }
+  addPetition(newPetition: Petition) {
+    this.petitions.push(newPetition)
+  }
 }

@@ -4,6 +4,7 @@ import { BrowsePetitionsComponent } from './browse-petitions/browse-petitions.co
 import { PetitionDetailComponent } from './petition-detail/petition-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
+import { CreatePetitionComponent } from './create-petition/create-petition.component'
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'create',
+    component: CreatePetitionComponent
   }
 ];
 

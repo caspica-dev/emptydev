@@ -1,3 +1,11 @@
-<p>
-  create-petition works!
-</p>
+<div class="container">
+  <h3>Write Your Petition File</h3>
+  <p>This is the first thing people will see about your petition. Get their
+  attention with a short title that focuses on the change you'd like them to support.</p>
+  <div>
+    <label>Petition Title.</label>
+    <input #newTitle>
+  </div>
+
+  <button (click="submitForm", newTitle.value, newDescription.value); newTitle.valu=""; newDescription.value="">Add</button>
+</div>
