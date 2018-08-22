@@ -12,12 +12,15 @@ export class PetitionService {
     this.petitions = database.list('petitions')
   }
 
+  //Function to grab the petitions from Firebase
   getPetitions(){
     return this.petitions
   }
+  // Function to get the Id of a petition for its details.
   getPetitionById(petitionId: string){
     return this.database.object('/petitions/' + petitionId);
   }
+  // Function that pushes petition to the database
   addPetition(newPetition: Petition) {
     this.petitions.push(newPetition)
   }

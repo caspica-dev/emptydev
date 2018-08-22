@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   providers: [PetitionService]
 })
 export class BrowsePetitionsComponent implements OnInit {
-  petitions: FirebaseObservable<any[]>;
+  petitions: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
   constructor(private router: Router, private petitionService: PetitionService){}

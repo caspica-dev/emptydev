@@ -8,5 +8,6 @@ import { PetitionService  } from '../petition.service'
   providers: [PetitionService]
 })
 export class HomeComponent {
-    title = 'The world\'s platform for change';
+  // variable for the homepages title
+    homeTitle = 'The world\'s platform for change';
 }

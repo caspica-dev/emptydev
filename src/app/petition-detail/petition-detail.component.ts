@@ -18,6 +18,7 @@ export class PetitionDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private location: Location, private petitionService: PetitionService) { }
 
+  // UUse the ngOnInit module to grab petitions from the service and goto a url shows that detauls of a petition
   ngOnInit() {
   this.route.params.forEach((urlParameters) => {
    this.petitionId = urlParameters['id'];
