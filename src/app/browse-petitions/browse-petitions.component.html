@@ -1,3 +1,11 @@
-<p>
-  browse-petitions works!
-</p>
+<h2>Petitions</h2>
+
+<div *ngFor="let petition of petitions | async"  class="panl panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(petition)"><em>{{petition.name}}</em></h3>
+    <!-- <div *ngIf="currentRoute === '/admin'">
+      {{petition.description}}
+      <hr> -->
+    <!-- </div> -->
+  </div>
+</div>

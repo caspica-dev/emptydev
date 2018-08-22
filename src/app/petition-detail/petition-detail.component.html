@@ -1,3 +1,4 @@
-<p>
-  petition-detail works!
-</p>
+<div>
+  <h3>{{(petitionToDisplay | async)?.name}</h3>
+  <p>{{(petitionToDisplay | async)?.description}}</p>
+</div>
