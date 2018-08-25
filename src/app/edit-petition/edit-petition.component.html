@@ -1,3 +1,9 @@
-<p>
-  edit-petition works!
-</p>
+<h4>Edit Petition</h4>
+
+<label>New Petition Title:</label>
+<input [(ngModel)]="selectedPetition.title">
+<br>
+<label>New Petition Description:</label>
+<input [(ngModel)]="selectedPetition.description">
+
+<button (click)="beginUpdatingPetition(selectedPetition)">Update</button>

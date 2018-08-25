@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { PetitionService  } from '../petition.service'
+
 
 @Component({
   selector: 'app-edit-petition',
@@ -8,7 +9,11 @@ import { PetitionService  } from '../petition.service'
   providers: [PetitionService]
 })
 export class EditPetitionComponent {
+  @Input() selectedPetition;
 
+  constructor(private petitionService: PetitionService) {}
 
-
+  beginUpdatingPetition(petitionToUpdate){
+    this.petitionService.updatePetition(petitionToUpdate)
+  }
 }

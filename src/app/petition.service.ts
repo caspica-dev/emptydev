@@ -24,4 +24,13 @@ export class PetitionService {
   addPetition(newPetition: Petition) {
     this.petitions.push(newPetition)
   }
+
+  // Function to update petition
+  updatePetition(localUpdatedPetition){
+  var petitionEntryInFirebase = this.getPetitionById(localUpdatedPetition.$key);
+  petitionEntryInFirebase.update({title: localUpdatedPetition.title,
+    artist: localUpdatedPetition.artist,
+    description: localUpdatedPetition.description});
+  }
+
 }
