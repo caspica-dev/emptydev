@@ -1,5 +1,4 @@
 <h4>Edit Petition</h4>
-
 <label>New Petition Title:</label>
 <input [(ngModel)]="selectedPetition.title">
 <br>
@@ -7,3 +6,4 @@
 <input [(ngModel)]="selectedPetition.description">
 
 <button (click)="beginUpdatingPetition(selectedPetition)">Update</button>
+<button (click)="beginDeletingPetition(selectedPetition)">Delete</button>

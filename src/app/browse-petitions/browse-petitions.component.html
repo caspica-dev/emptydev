@@ -3,8 +3,10 @@
 <div *ngFor="let petition of petitions | async"  class="panl panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(petition)"><em>{{petition.name}}</em></h3>
-    <!-- <div *ngIf="currentRoute === '/admin'">
+    <div *ngIf="currentRoute === '/admin'">
       {{petition.description}}
-      <hr> -->
+      <hr>
+      <app-edit-petition [selectedPetition]="petition"></app-edit-petition>
+    </div>
   </div>
 </div>

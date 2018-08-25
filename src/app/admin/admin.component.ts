@@ -10,5 +10,10 @@ import { Petition } from '../petition.model'
 })
 export class AdminComponent {
 
+  constructor(private petitionService: PetitionService) { }
 
+  submitForm(title: string, description: string) {
+    var newPetition: Petition = new Petition(title, description);
+    this.petitionService.addPetition(newPetition);
+  }
 }
