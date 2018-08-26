@@ -28,7 +28,7 @@ export class PetitionService {
   // Function to update petition
   updatePetition(localUpdatedPetition){
   var petitionEntryInFirebase = this.getPetitionById(localUpdatedPetition.$key);
-  petitionEntryInFirebase.update({title: localUpdatedPetition.title,
+  petitionEntryInFirebase.update({name: localUpdatedPetition.name,
     description: localUpdatedPetition.description});
   }
 
