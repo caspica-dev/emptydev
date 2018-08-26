@@ -19,3 +19,8 @@ body {
 .start-petition-home-div {
   margin-top: 50px;
 }
+.button-changes {
+  background-color: red;
+  color: white;
+  size: 100px;
+}
